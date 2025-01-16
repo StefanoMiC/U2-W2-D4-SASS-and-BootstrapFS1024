@@ -36,8 +36,8 @@ $container-max-widths-custom: (
   "3-xl": 1720px
 );
 
-$grid-breakpoints: map-merge($grid-breakpoints-custom, $grid-breakpoints);
-$container-max-widths: map-merge($container-max-widths-custom, $container-max-widths);
+$grid-breakpoints: map-merge($grid-breakpoints, $grid-breakpoints-custom);
+$container-max-widths: map-merge($container-max-widths, $container-max-widths-custom);
 
 // 5. Include remainder of required parts
 @import "../../bootstrap/scss/maps";
