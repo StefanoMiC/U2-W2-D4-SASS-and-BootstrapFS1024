@@ -24,7 +24,7 @@ $theme-colors-custom: (
   "epicode": $indigo-700
 );
 
-$theme-colors: map-merge($theme-colors-custom, $theme-colors);
+$theme-colors: map-merge($theme-colors, $theme-colors-custom);
 
 $grid-breakpoints-custom: (
   "2-xl": 1600px,
