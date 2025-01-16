@@ -6,12 +6,38 @@
 
 // 2. Include any default variable overrides here
 $primary: purple;
+$border-width: 2px;
+// $card-border-radius: 0px;
+// $btn-border-radius: 0px;
+
+$border-radius: 1rem;
+$card-title-color: $primary;
+$grid-gutter-width: 0.25rem;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../bootstrap/scss/variables";
 @import "../../bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
+
+$theme-colors-custom: (
+  "epicode": $indigo-700
+);
+
+$theme-colors: map-merge($theme-colors-custom, $theme-colors);
+
+$grid-breakpoints-custom: (
+  "2-xl": 1600px,
+  "3-xl": 1800px
+);
+
+$container-max-widths-custom: (
+  "2-xl": 1520px,
+  "3-xl": 1720px
+);
+
+$grid-breakpoints: map-merge($grid-breakpoints-custom, $grid-breakpoints);
+$container-max-widths: map-merge($container-max-widths-custom, $container-max-widths);
 
 // 5. Include remainder of required parts
 @import "../../bootstrap/scss/maps";
